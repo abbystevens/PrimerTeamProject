@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
+  <head>
     <title>Mt Hood Therapeutic Massage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
-    <link href="css/myStyles.css" rel="stylesheet" media="screen">
+	  <link href="css/myStyles.css" rel="stylesheet" media="screen">
     <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
-    <link href="stylesheets/Feedback.css" rel="stylesheet" media="screen">
   </head>
-
+  
   <body>
 
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    
     <header class="header">
       <img src="http://lorempixel.com/1700/200/nature">
     </header>
 
-      <!-- Navbar code -->
+    <!-- Navbar code -->
     <nav class="navbar navbar-custom">
       <div class="navbar-default navbar-offset-200px">
           <div class="navbar-header">
@@ -41,43 +50,9 @@
       </div>
     </nav>
 
-    <div id="container">
-    <form name="myform" action="https://docs.google.com/spreadsheet/ccc?key=0AqNGTc0aCQUtdGNMQUZabWQyVk5MZ0h1WldpNVl1SWc&usp=sharing" method="POST">  
-      <h3 class="header">Please complete a brief survey about your experience</h3>
-      <div class="feedback_questions">
-        <p class="prompt">Did you enjoy your experience with us?</p>
-        <input type="radio" name="feedback_type" value="great"/>&nbsp; Absolutely!<br />
-        <input type="radio" name="feedback_type" value="okay"/>&nbsp; It was okay.<br />
-        <input type="radio" name="feedback_type" value="problem"/>&nbsp; I did not enjoy my experience.<br />
-      </div>    
+  
 
-      <div class="feedback_questions">
-        <p class="prompt">Would you recommend us to a friend?</p>
-        <input type="radio" name="feedback_type" value="yes"/>&nbsp; Sure!<br />
-        <input type="radio" name="feedback_type" value="no"/>&nbsp; I would not.<br />
-      </div>
-
-      <div class="feedback_questions">
-        <p class="prompt">Do you want me to contact you to set up another appointment? If so, please enter your email.</p>
-        <input type="text" name="email" SIZE="30"> Yes, please.<br />
-        <input type="radio" name="feedback_type" value="no"/>&nbsp; No, thanks.<br />
-      </div>
-
-      <div class="feedback_questions">
-        <p class="prompt">Any other questions, comments or concerns?</p>
-        <textarea name="customer_message" rows="7" cols="70"></textarea>
-      </div>  
-
-      <div id="submit_button">
-        <input name="submit" type="submit" value="Submit" />
-      </div> 
-    </form>  
-    </div>    
-
-
-
-
-    <div id="footer">
+      <div id="footer">
         <div class="container">
           <!--should we use pull-left and pull-right?  can't get the twitter icon to look right when the page is small-->
 
@@ -97,6 +72,5 @@
     </div>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
-
   </body>
- </html> 
+</html>
