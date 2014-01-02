@@ -1,0 +1,49 @@
+
+/* Main Content 
+=============================== */
+
+.main-body {
+	color: #2E2E40;
+	padding: 20px 20px 20px 20px;
+	margin: 10px 10px 20px 10px;
+}
+
+.aside {
+	padding: 20px 20px 20px 20px;
+	background: #B19F8F;
+	color: #2E2E40;
+	text-align: center;
+	margin: 10px 10px 30px 10px;
+}
+
+.aside p {
+	font-style: italic;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Navbar
+===============================  */
+
+.navbar-collapse {
+	background-color: #768FA6;
+}
+.navbar-custom {
+    color: #2E2E40;
+    border-radius: 0;
+}
+
+.navbar-custom .navbar-brand {
+	color: #2E2E40;
+}
+
+.navbar-custom .navbar-nav > li > a {
+	color: #2E2E40;
+}
+
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #2E2E40;
+}
+
