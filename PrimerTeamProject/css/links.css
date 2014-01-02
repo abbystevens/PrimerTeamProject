@@ -1,0 +1,19 @@
+.header {
+	color: #2E2E40;
+	margin-left: 80px;
+	margin-bottom: 35px;
+}
+
+.info {
+	font-size: 16px;
+	margin-bottom: 30px;
+	margin-left: 100px;
+}
+
+.list_items {
+	margin-left: 100px;
+}
+
+.reference_list {
+	margin-bottom: 40px;
+}
