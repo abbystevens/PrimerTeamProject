@@ -6,9 +6,32 @@
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
     <link href="css/myStyles.css" rel="stylesheet" media="screen">
-    <link href="css/Feedback.css" rel="stylesheet" media="screen">
+    <link href="css/contact.css" rel="stylesheet" media="screen">
     <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
-    <link href="css/Feedback.css" rel="stylesheet" media="screen">
+    <style>
+      #map_canvas {
+        width: 400px;
+        height: 350px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script>
+      function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: new google.maps.LatLng(45.53268, -122.69668),
+          zoom: 14,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+        var marker1 = new google.maps.Marker({
+        position: new google.maps.LatLng(45.53268, -122.69668),
+        map: map,
+        });
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
   </head>
   
   <body>
@@ -38,7 +61,9 @@
             <span class="icon-bar"></span>
           </button>
 
-          <a class="navbar-brand" href="index.html">MHTM Logo</a>
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.jpg" alt="Mt Hood Therapeutic Massage logo"></a>
+
         </div>
           <div class="collapse navbar-collapse" id="navigation">
             <ul class="nav navbar-nav navbar-right" >
@@ -51,53 +76,36 @@
       </div>
     </nav>
 
-    <div id="container">
-    <form name="myform" action="https://docs.google.com/spreadsheet/ccc?key=0AqNGTc0aCQUtdGNMQUZabWQyVk5MZ0h1WldpNVl1SWc&usp=sharing" method="POST">  
-      <h3 class="feedback_title">Please complete a brief survey about your experience</h3>
-      <div class="feedback_questions">
-        <p class="prompt">Did you enjoy your experience with us?</p>
-        <input type="radio" name="feedback_type" value="great"/>&nbsp; Absolutely!<br />
-        <input type="radio" name="feedback_type" value="okay"/>&nbsp; It was okay.<br />
-        <input type="radio" name="feedback_type" value="problem"/>&nbsp; I did not enjoy my experience.<br />
-      </div>    
+    <div class="container">
+      <div class="row">
+      <section>
+      <div class="main-body col-sm-8">
+        <h3 class="contact_title">Contact<h3/>
+          <p class="prompt">E-mail: <a href="www.gmail.com">Susan.Mann@MtHoodMassage.com</a><p/>
 
-      <div class="feedback_questions">
-        <p class="prompt">Would you recommend us to a friend?</p>
-        <input type="radio" name="feedback_type" value="yes"/>&nbsp; Sure!<br />
-        <input type="radio" name="feedback_type" value="no"/>&nbsp; I would not.<br />
+          <p class="prompt">Phone: <a href="555-555-5555">555-555-5555</a><p/>
+
+        <h3>Location<h3/>
+          <p class="prompt">Address: 1771 NW Pettygrove St #140, Portland, OR 97209<p/>
+          <p class="prompt">Map:<p/>
+
+        <div id="map_canvas"></div>
+        
       </div>
+        <aside class="aside col-sm-3">
+          <h4>Client Feedback</h4>
+          <p>"My husband was always complaining about his lower back pain until he went to MHTM. He said he didn't need to say anymore than that his lower back hurt, and his massage therapist was able to find his trouble areas and help him work it out from day one! He also gave him stretches and exercises to do to help him to continue to heal. Thanks for curing my whiney husband!"</p>
+          <img src="http://lorempixel.com/200/200/nature" class="picture">
+        </aside>
+      </section>
+    </div>
+  </div>
+      <hr>
 
-      <div class="feedback_questions">
-        <p class="prompt">Do you want me to contact you to set up another appointment? If so, please enter your email.</p>
-        <input type="text" name="email" SIZE="30"> Yes, please.<br />
-        <input type="radio" name="feedback_type" value="no"/>&nbsp; No, thanks.<br />
-      </div>
-
-      <div class="feedback_questions">
-        <p class="prompt">Any other questions, comments or concerns?</p>
-        <textarea name="customer_message" rows="7" cols="70"></textarea>
-      </div>  
-
-      <div id="submit_button">
-        <input name="submit" type="submit" value="Submit" />
-      </div> 
-    </form>  
-    </div>    
-
-
-
-
-    <div id="footer">
+      <div id="footer">
         <div class="container">
           <!--should we use pull-left and pull-right?  can't get the twitter icon to look right when the page is small-->
-
-
           
-          <div class="fb-like" data-href="https://www.facebook.com/PortlandCodeSchool" data-width="200px" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div>
-
-
-
-
        <!--twitter button code-->
         <a class="twitter-follow-button navbar-left" href="https://twitter.com/TheMTFoundation"  data-show-count="false">Follow @TheMTFoundation</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -105,8 +113,8 @@
         
       </div>
     </div>
+
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
-
   </body>
- </html> 
+</html>

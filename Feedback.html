@@ -8,7 +8,6 @@
     <link href="css/myStyles.css" rel="stylesheet" media="screen">
     <link href="css/Feedback.css" rel="stylesheet" media="screen">
     <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
-    <link href="css/Feedback.css" rel="stylesheet" media="screen">
   </head>
   
   <body>
@@ -51,40 +50,42 @@
       </div>
     </nav>
 
-    <div id="container">
-    <form name="myform" action="https://docs.google.com/spreadsheet/ccc?key=0AqNGTc0aCQUtdGNMQUZabWQyVk5MZ0h1WldpNVl1SWc&usp=sharing" method="POST">  
-      <h3 class="feedback_title">Please complete a brief survey about your experience</h3>
-      <div class="feedback_questions">
-        <p class="prompt">Did you enjoy your experience with us?</p>
-        <input type="radio" name="feedback_type" value="great"/>&nbsp; Absolutely!<br />
-        <input type="radio" name="feedback_type" value="okay"/>&nbsp; It was okay.<br />
-        <input type="radio" name="feedback_type" value="problem"/>&nbsp; I did not enjoy my experience.<br />
+    <div class="form_container">
+      <div class="row">
+      <section>
+      <div class="main-body col-sm-8">
+      <div id="wufoo-zf2miao1d8uns1">
+      Fill out my <a href="https://genrumancik.wufoo.com/forms/zf2miao1d8uns1">online form</a>.
+      </div>
+      <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">HTML Forms powered by <a href="http://www.wufoo.com" >Wufoo</a></div>
+      <script type="text/javascript">var zf2miao1d8uns1;(function(d, t) {
+      var s = d.createElement(t), options = {
+      'userName':'genrumancik', 
+      'formHash':'zf2miao1d8uns1', 
+      'autoResize':true,
+      'height':'438',
+      'async':true,
+      'host':'wufoo.com',
+      'header':'show', 
+      'ssl':true};
+      s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+      s.onload = s.onreadystatechange = function() {
+      var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+      try { zf2miao1d8uns1 = new WufooForm();zf2miao1d8uns1.initialize(options);zf2miao1d8uns1.display(); } catch (e) {}};
+      var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+      })(document, 'script');</script>
+      </div>
+
+        <aside class="aside col-sm-3">
+          <h4>Client Feedback</h4>
+          <p>"I was just looking for a relaxing atmosphere and immediately fell in love with MHTM. Their massage therapists make you feel right at home, and I love the natural feel of the spa. I wouldn't go anywhere else!"</p>
+          <img src="http://lorempixel.com/200/200/nature" class="picture">
+
+        </aside>  
+      </section>
       </div>    
-
-      <div class="feedback_questions">
-        <p class="prompt">Would you recommend us to a friend?</p>
-        <input type="radio" name="feedback_type" value="yes"/>&nbsp; Sure!<br />
-        <input type="radio" name="feedback_type" value="no"/>&nbsp; I would not.<br />
-      </div>
-
-      <div class="feedback_questions">
-        <p class="prompt">Do you want me to contact you to set up another appointment? If so, please enter your email.</p>
-        <input type="text" name="email" SIZE="30"> Yes, please.<br />
-        <input type="radio" name="feedback_type" value="no"/>&nbsp; No, thanks.<br />
-      </div>
-
-      <div class="feedback_questions">
-        <p class="prompt">Any other questions, comments or concerns?</p>
-        <textarea name="customer_message" rows="7" cols="70"></textarea>
-      </div>  
-
-      <div id="submit_button">
-        <input name="submit" type="submit" value="Submit" />
-      </div> 
-    </form>  
-    </div>    
-
-
+    </div>  
+      <hr>
 
 
     <div id="footer">

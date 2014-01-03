@@ -6,9 +6,8 @@
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
     <link href="css/myStyles.css" rel="stylesheet" media="screen">
-    <link href="css/Feedback.css" rel="stylesheet" media="screen">
+    <link href="css/offerings.css" rel="stylesheet" media="screen">
     <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
-    <link href="css/Feedback.css" rel="stylesheet" media="screen">
   </head>
   
   <body>
@@ -24,7 +23,7 @@
 
     
     <header class="header">
-      <img src="http://lorempixel.com/1700/200/nature">
+      <img src="img/HomePageWeb.jpg">
     </header>
 
     <!-- Navbar code -->
@@ -51,53 +50,58 @@
       </div>
     </nav>
 
-    <div id="container">
-    <form name="myform" action="https://docs.google.com/spreadsheet/ccc?key=0AqNGTc0aCQUtdGNMQUZabWQyVk5MZ0h1WldpNVl1SWc&usp=sharing" method="POST">  
-      <h3 class="feedback_title">Please complete a brief survey about your experience</h3>
-      <div class="feedback_questions">
-        <p class="prompt">Did you enjoy your experience with us?</p>
-        <input type="radio" name="feedback_type" value="great"/>&nbsp; Absolutely!<br />
-        <input type="radio" name="feedback_type" value="okay"/>&nbsp; It was okay.<br />
-        <input type="radio" name="feedback_type" value="problem"/>&nbsp; I did not enjoy my experience.<br />
-      </div>    
+    <div class="container">
+      <div class="row">
+      <section>
+      <div class="main-body col-sm-8">
+        
+        
 
-      <div class="feedback_questions">
-        <p class="prompt">Would you recommend us to a friend?</p>
-        <input type="radio" name="feedback_type" value="yes"/>&nbsp; Sure!<br />
-        <input type="radio" name="feedback_type" value="no"/>&nbsp; I would not.<br />
+      <h3>Swedish Massage</h3>
+        <ul>
+          <li>Light to medium pressure</li>
+          <li>Promotes circulation and lymph movement</li>
+        </ul> 
+
+      <h3>Deep Tissue Massage</h3>
+        <ul>
+          <li>Releases muscle tension</li>
+          <li>Loosens scar tissue and lengthens muscles</li>
+        </ul>
+        
+      <h3>Trigger Point Therapy</h3>
+        <ul>
+          <li>Relieves a tight area within muscle tissue causing pain in other areas of body</li/>
+          <li>Uses cycles of isolated pressure and release</li>
+        </ul>
+       
+       <h3>Reflexology</h3>
+        <ul>
+          <li>Restorative relaxation</li>
+          <li>Decreases stress and anxiety</li>
+        </ul>
+
+      <h3>Hot Stone Massage</h3>
+        <ul>
+          <li>Hot stone massage therapy melts away tension, eases muscle stiffness and increases circulation</li>
+          <li>Promotes deeper muscle relaxation through the placement of smooth, water-heated stones</li>
+        </ul>
+        
       </div>
+        <aside class="aside col-sm-3">
+          <h4>Toad-like smile</h4>
+          <p>Flourish and Blotts he knew I’d come back Quidditch World Cup. Fat Lady baubles banana fritters fairy lights Petrificus Totalus. So thirsty, deluminator firs’ years follow me 12 inches of parchment.</p>
+          <img src="http://lorempixel.com/200/200/nature" class="picture">
+        </aside>
+      </section>
+    </div>
+    </div>
+      <hr>
 
-      <div class="feedback_questions">
-        <p class="prompt">Do you want me to contact you to set up another appointment? If so, please enter your email.</p>
-        <input type="text" name="email" SIZE="30"> Yes, please.<br />
-        <input type="radio" name="feedback_type" value="no"/>&nbsp; No, thanks.<br />
-      </div>
-
-      <div class="feedback_questions">
-        <p class="prompt">Any other questions, comments or concerns?</p>
-        <textarea name="customer_message" rows="7" cols="70"></textarea>
-      </div>  
-
-      <div id="submit_button">
-        <input name="submit" type="submit" value="Submit" />
-      </div> 
-    </form>  
-    </div>    
-
-
-
-
-    <div id="footer">
+      <div id="footer">
         <div class="container">
           <!--should we use pull-left and pull-right?  can't get the twitter icon to look right when the page is small-->
-
-
           
-          <div class="fb-like" data-href="https://www.facebook.com/PortlandCodeSchool" data-width="200px" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div>
-
-
-
-
        <!--twitter button code-->
         <a class="twitter-follow-button navbar-left" href="https://twitter.com/TheMTFoundation"  data-show-count="false">Follow @TheMTFoundation</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -107,6 +111,5 @@
     </div>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
-
   </body>
- </html> 
+</html>
