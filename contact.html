@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mt Hood Therapeutic Massage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="css/myStyles.css" rel="stylesheet" media="screen">
+    <link href="css/contact.css" rel="stylesheet" media="screen">
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+    <style>
+      #map_canvas {
+        width: 400px;
+        height: 350px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script>
+      function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: new google.maps.LatLng(45.53268, -122.69668),
+          zoom: 14,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+        var marker1 = new google.maps.Marker({
+        position: new google.maps.LatLng(45.53268, -122.69668),
+        map: map,
+        });
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  
+  <body>
+
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    
+    <header class="header">
+      <img src="http://lorempixel.com/1700/200/nature">
+    </header>
+
+    <!-- Navbar code -->
+    <nav class="navbar navbar-custom">
+      <div class="navbar-default navbar-offset-200px">
+          <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.jpg" alt="Mt Hood Therapeutic Massage logo"></a>
+
+        </div>
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-right" >
+              <li><a href="offerings.html">Offerings</a></li>
+              <li><a href="links.html">Links</a></li>
+              <li><a href="Feedback.html">Feedback</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+      <section>
+      <div class="main-body col-sm-8">
+        <h3 class="contact_title">Contact<h3/>
+          <p class="prompt">E-mail: <a href="www.gmail.com">Susan.Mann@MtHoodMassage.com</a><p/>
+
+          <p class="prompt">Phone: <a href="555-555-5555">555-555-5555</a><p/>
+
+        <h3>Location<h3/>
+          <p class="prompt">Address: 1771 NW Pettygrove St #140, Portland, OR 97209<p/>
+          <p class="prompt">Map:<p/>
+
+        <div id="map_canvas"></div>
+        
+      </div>
+        <aside class="aside col-sm-3">
+          <h4>Client Feedback</h4>
+          <p>"My husband was always complaining about his lower back pain until he went to MHTM. He said he didn't need to say anymore than that his lower back hurt, and his massage therapist was able to find his trouble areas and help him work it out from day one! He also gave him stretches and exercises to do to help him to continue to heal. Thanks for curing my whiney husband!"</p>
+          <img src="http://lorempixel.com/200/200/nature" class="picture">
+        </aside>
+      </section>
+    </div>
+  </div>
+      <hr>
+
+      <div id="footer">
+        <div class="container">
+          <!--should we use pull-left and pull-right?  can't get the twitter icon to look right when the page is small-->
+          
+       <!--twitter button code-->
+        <a class="twitter-follow-button navbar-left" href="https://twitter.com/TheMTFoundation"  data-show-count="false">Follow @TheMTFoundation</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        <p class="navbar-right">&copy; 2013 Mt Hood Therapeutic Massage - By Go Gitters</p>
+        
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
